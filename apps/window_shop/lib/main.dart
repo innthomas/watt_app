@@ -65,6 +65,14 @@ class _MyAppState extends State<MyApp> {
               height: mheight,
               color: Colors.green,
               child: Center(
+                child: Image.network(
+                    'https://res.cloudinary.com/innthomas/image/upload/v1566553810/innthomaspassport/innpix_hnaubr.jpg'),
+              ),
+            ),
+            Container(
+              height: mheight,
+              color: Colors.green,
+              child: Center(
                 child: Text("entry g"),
               ),
             ),
@@ -97,17 +105,24 @@ class _MyAppState extends State<MyApp> {
               ),
             ),
             Container(
+                height: mheight,
+                color: Colors.green,
+                child: Center(
+                  child: Text("entry l"),
+                )),
+            Container(
               height: mheight,
               color: Colors.green,
               child: Center(
-                child: Text("entry l"),
+                child: Text("entry m"),
               ),
             ),
             Container(
               height: mheight,
               color: Colors.green,
               child: Center(
-                child: Text("entry m"),
+                child: Image.network(
+                    'https://res.cloudinary.com/innthomas/image/upload/v1566553810/innthomaspassport/innpix_hnaubr.jpg'),
               ),
             ),
             Container(
