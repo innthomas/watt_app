@@ -8,12 +8,52 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  double mheight = 90;
+  double mheight = 190;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: "watt window",
       home: Scaffold(
+        drawer: Drawer(
+          elevation: 40.0,
+          child: ListView(
+            padding: EdgeInsets.zero,
+            children: <Widget>[
+              DrawerHeader(
+                child: Text("Categories"),
+                decoration: BoxDecoration(
+                  color: Colors.blue[500],
+                ),
+              ),
+              ListTile(
+                title: Text("shoes"),
+                onTap: null,
+              ),
+              ListTile(
+                title: Text("bags"),
+                onTap: null,
+              ),
+              ListTile(
+                title: Text("fabric"),
+                onTap: null,
+              ),
+              ListTile(
+                title: Text("groceries"),
+                onTap: null,
+              ),
+              ListTile(
+                title: Text("electronics"),
+                onTap: null,
+              ),
+              ListTile(
+                title: Text("foodstuff"),
+                onTap: null,
+              ),
+            ],
+          ),
+        ),
         appBar: AppBar(
           title: Text('watt window'),
         ),
@@ -37,14 +77,21 @@ class _MyAppState extends State<MyApp> {
               height: mheight,
               color: Colors.green,
               child: Center(
-                child: Text("entry c"),
+                child: Image.network(
+                  "https://res.cloudinary.com/innthomas/image/upload/v1566254708/samples/animals/kitten-playing.gif",
+                ),
               ),
             ),
-            Container(
-              height: mheight,
-              color: Colors.green,
-              child: Center(
-                child: Text("entry d"),
+            GestureDetector(
+              onTap: () {
+                print('i was clicked');
+              },
+              child: Container(
+                height: mheight,
+                color: Colors.green,
+                child: Center(
+                  child: Text("entry d"),
+                ),
               ),
             ),
             Container(
@@ -87,7 +134,8 @@ class _MyAppState extends State<MyApp> {
               height: mheight,
               color: Colors.green,
               child: Center(
-                child: Text("entry i"),
+                child: Image.network(
+                    "https://res.cloudinary.com/innthomas/image/upload/v1566254706/samples/food/spices.jpg"),
               ),
             ),
             Container(
