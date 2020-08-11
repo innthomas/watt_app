@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'categories/shoes.dart';
 
 void main() => runApp(MyApp());
 
@@ -29,7 +30,14 @@ class _MyAppState extends State<MyApp> {
               ),
               ListTile(
                 title: Text("shoes"),
-                onTap: null,
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ShoesWindow(),
+                    ),
+                  );
+                },
               ),
               ListTile(
                 title: Text("bags"),
@@ -49,6 +57,10 @@ class _MyAppState extends State<MyApp> {
               ),
               ListTile(
                 title: Text("foodstuff"),
+                onTap: null,
+              ),
+              ListTile(
+                title: Text("close"),
                 onTap: null,
               ),
             ],
