@@ -49,10 +49,7 @@ class HomePage extends StatelessWidget {
             ListTile(
               title: Text("close"),
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => SecondRoute()),
-                );
+                Navigator.pop(context);
               },
             ),
           ],
