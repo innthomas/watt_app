@@ -5,6 +5,22 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: BottomAppBar(
+        child: Row(
+          children: [
+            IconButton(icon: Icon(Icons.home), onPressed: null),
+            Spacer(),
+            IconButton(icon: Icon(Icons.shopping_basket), onPressed: null),
+            Spacer(),
+            IconButton(icon: Icon(Icons.notifications), onPressed: null),
+            Spacer(),
+            IconButton(icon: Icon(Icons.card_giftcard), onPressed: null),
+          ],
+        ),
+        color: Colors.teal[400],
+        elevation: 35.0,
+      ),
+      backgroundColor: Colors.teal[200],
       appBar: AppBar(
         title: Text("watt market"),
         backgroundColor: Colors.teal,
