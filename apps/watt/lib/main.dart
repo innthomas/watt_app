@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'drawer.dart';
+import 'home.dart';
 
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    title: 'Navigation Basics',
+    title: 'watt',
     home: HomePage(),
   ));
 }
